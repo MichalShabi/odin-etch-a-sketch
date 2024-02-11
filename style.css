@@ -1,13 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F0EBE3;
+}
+
 #div-container {
     width: 750px;
     height: 750px;
     border-style: solid;
     display: flex;
-}
-
-#squere {
-    border: solid;
-    display: flex;
+    margin: 0px 200px;
 }
 
 .column {
@@ -25,4 +29,23 @@
 
 .colored {
     background-color: cadetblue;
+}
+
+#start-btn {
+    border: 2px solid cadetblue;
+    font-size: 24px;
+    background-color: #E4DCCF;
+    border-radius: 7px;
+    padding: 6px 28px;
+    color: cadetblue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#start-btn:hover{
+    background-color: cadetblue;
+    color: #E4DCCF;
+    border: 2px solid cadetblue;
+
+
 }

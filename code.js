@@ -26,7 +26,10 @@ function makeGrid(size) {
 }
 
 function startGame() {
-    let size = prompt("choose the number of squares per side (max 100");
+    let size = prompt("choose the number of squares per side (max 100)");
+    if(size > 100) {
+        alert("you need to enter a value bigger than 0 smaller than 100")
+    }
     if(size !== null && size <= 100) {
         makeGrid(size);
     }
