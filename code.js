@@ -5,6 +5,7 @@ function makeGrid(size) {
     let divContainer = document.querySelector("#div-container");
     console.log(divContainer.id)
     
+    divContainer.innerHTML = ""
     for (let i = 0; i < size; i++) {
         let column = document.createElement("div");
         // divSquere.setAttribute("id", "cou");
@@ -15,7 +16,6 @@ function makeGrid(size) {
             row.addEventListener("mouseover", () => {
                 row.classList.add("colored");
             })
-            row.style.border = "2px solid black";
             column.appendChild(row);
             // row.innerText = (i * size) + j;
             
@@ -25,7 +25,13 @@ function makeGrid(size) {
     }
 }
 
+function startGame() {
+    let size = prompt("choose the number of squares per side (max 100");
+    if(size !== null && size <= 100) {
+        makeGrid(size);
+    }
+}
 
 
-makeGrid(16);
+
 
